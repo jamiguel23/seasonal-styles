@@ -1,7 +1,9 @@
 $(function(){
 
+  let counter = 0;
   $("div#myDiv p").each(function(){
-    $(this).css("background-color","blue");
+    counter++;
+    $(this).prepend(counter + ') ').fadeOut(5000);
 });
 
 });
