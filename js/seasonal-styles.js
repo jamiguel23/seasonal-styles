@@ -1,10 +1,10 @@
-$(function(){
+$(function () {
 
   let counter = 0;
-  $("div#myDiv p").each(function(){
+  $("div#myDiv p").each(function () {
     counter++;
     $(this).prepend(counter + ') ').fadeOut(5000);
-});
+  });
 
 });
 
