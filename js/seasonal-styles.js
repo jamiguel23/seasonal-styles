@@ -1,16 +1,16 @@
 $(function () {
 
-    //start hidden
-    $("div#yetAnotherDiv li").hide();
+  //start hidden
+  $("div#yetAnotherDiv li").hide();
 
 
-    //reveal li items
-    $("div#yetAnotherDiv")
+  //reveal li items
+  $("div#yetAnotherDiv")
     .hide()
-    .fadeIn(2000,function(){
-        $("div#yetAnotherDiv li").each(function(){
-            $(this).slideDown(1000);
-        });
+    .fadeIn(2000, function () {
+      $("div#yetAnotherDiv li").each(function () {
+        $(this).slideDown(1000);
+      });
     });
 
 
