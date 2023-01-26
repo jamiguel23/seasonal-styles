@@ -18,6 +18,14 @@ $(function () {
           $('#myHeader').text('This is spring');
         break;
 
+        case "fall":
+          console.log('this is the working season', season)
+          $('#logo').attr("src", 'images/fall.gif')
+          $('#wear').attr("src", 'images/fall-wear.jpg')
+          $('html').css('background-color', '#A81124');
+          $('#myHeader').text('This is fall!');
+        break;
+
         default:
           alert('no season matches')
       }
