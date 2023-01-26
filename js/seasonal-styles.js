@@ -9,14 +9,14 @@ $(function () {
       season = season.toLowerCase();
       console.log(season);
 
-      switch(season){
+      switch (season) {
         case "spring":
           console.log('this is the working season', season)
           $('#logo').attr("src", 'images/spring.gif')
           $('#wear').attr("src", 'images/spring-wear.jpg')
           $('html').css('background-color', '#2B7129');
           $('#myHeader').text('This is spring');
-        break;
+          break;
 
         case "fall":
           console.log('this is the working season', season)
@@ -24,7 +24,7 @@ $(function () {
           $('#wear').attr("src", 'images/fall-wear.jpg')
           $('html').css('background-color', '#A81124');
           $('#myHeader').text('This is fall!');
-        break;
+          break;
 
         case "summer":
           console.log('this is the working season', season)
@@ -32,7 +32,7 @@ $(function () {
           $('#wear').attr("src", 'images/summer-wear.jpg')
           $('html').css('background-color', '#EBA52B');
           $('#myHeader').text(' Welcome to summer!');
-        break;
+          break;
 
         case "winter":
           console.log('this is the working season', season)
@@ -40,7 +40,7 @@ $(function () {
           $('#wear').attr("src", 'images/winter-wear.jpg')
           $('html').css('background-color', '#005393');
           $('#myHeader').text('Winter is coming!');
-        break;
+          break;
 
         default:
           alert('no season matches')
@@ -49,6 +49,7 @@ $(function () {
           $('html').css('background-color', '#ccc');
           $('#myHeader').text('Outfitter for All Seasons');
       }
+
     });
   });
 
