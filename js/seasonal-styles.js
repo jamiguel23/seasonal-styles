@@ -34,6 +34,14 @@ $(function () {
           $('#myHeader').text(' Welcome to summer!');
         break;
 
+        case "winter":
+          console.log('this is the working season', season)
+          $('#logo').attr("src", 'images/winter.gif')
+          $('#wear').attr("src", 'images/winter-wear.jpg')
+          $('html').css('background-color', '#005393');
+          $('#myHeader').text('Winter is coming!');
+        break;
+
         default:
           alert('no season matches')
           $('#logo').attr("src", 'images/four-seasons.gif')
