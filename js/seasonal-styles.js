@@ -26,8 +26,20 @@ $(function () {
           $('#myHeader').text('This is fall!');
         break;
 
+        case "summer":
+          console.log('this is the working season', season)
+          $('#logo').attr("src", 'images/summer.gif')
+          $('#wear').attr("src", 'images/summer-wear.jpg')
+          $('html').css('background-color', '#EBA52B');
+          $('#myHeader').text(' Welcome to summer!');
+        break;
+
         default:
           alert('no season matches')
+          $('#logo').attr("src", 'images/four-seasons.gif')
+          $('#wear').attr("src", 'images/300x400.png')
+          $('html').css('background-color', '#ccc');
+          $('#myHeader').text('Outfitter for All Seasons');
       }
     });
   });
