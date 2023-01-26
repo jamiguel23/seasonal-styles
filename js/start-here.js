@@ -5,3 +5,7 @@ $("document").ready(function(){
         alert(season);
     });
 });
+
+//div#yetAnotherDiv li:nth-child(even) {
+//     background-color: yellow;
+// }
