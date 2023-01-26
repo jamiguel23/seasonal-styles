@@ -1,10 +1,18 @@
 $(function () {
 
-  let counter = 0;
-  $("div#myDiv p").each(function () {
-    counter++;
-    $(this).prepend(counter + ') ').fadeOut(5000);
-  });
+    //start hidden
+    $("div#yetAnotherDiv li").hide();
+
+
+    //reveal li items
+    $("div#yetAnotherDiv")
+    .hide()
+    .fadeIn(2000,function(){
+        $("div#yetAnotherDiv li").each(function(){
+            $(this).slideDown(1000);
+        });
+    });
+
 
 });
 
